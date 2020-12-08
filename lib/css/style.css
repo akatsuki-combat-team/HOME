@@ -1,0 +1,291 @@
+@charset "utf-8";
+@import url(https://fonts.googleapos.com/earlyccess/notosansjapanese.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: メイリオ;
+    color: #333;
+    letter-spacing: 1.5px;
+    line-height: 1.75;
+    background-color: white;
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-emphasis: none;
+}
+.container {
+    max-width: 1280px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.58);
+    z-index: 9999;
+}
+header > .container {
+    max-width: 1820px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0, 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.area_logo_header .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.area_logo_header img {
+    width: 73px;
+    height: 73px;
+}
+.area_logo_header  p {
+    font-size: 30px;
+    color: #C6C2C2;
+    width: 430px;
+    height: 45px;
+    margin: 15px;
+}
+.nav_header {
+    margin-right: 50px;
+}
+.list_nav_header {
+    display: flex;
+    justify-content: space-between;
+}
+.list_nav_header li {
+    font-size: 25px;
+    list-style: none;
+    text-align: center;
+    margin-right: 50px;
+}
+.list_nav_header a {
+    text-decoration: none;
+    color: #C6C2C2;
+}
+
+
+/*main*/
+/*view*/
+.area_top_view {
+    background-image: url(../image/warthunder-header-image@2x.png);
+    background-size: cover;
+    padding: 180px 0 150px 0;
+}
+.area_top_view > .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100 20px;
+}
+.top_view_ttl p {
+    text-decoration: none;
+    text-align: left;
+    font-size: 40px;
+    color: white;
+
+}
+
+/*btn*/
+.area_top_view_sns {
+    display: flex;
+}
+.sns-btn {
+    width: 136px;
+    height: 53px;
+    color: white;
+    border-radius: 26px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 55px;
+    margin: 10px 0;
+    margin-right: 159px;
+    font-size: 30px;
+}
+.twitter {
+    background-color: #00ACEE;
+}
+.discord {
+    background-color: #7289DA;
+}
+
+/*about*/
+.area_home_about .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.head_home > .ttl {
+    margin-top: 75px;
+    font-size: 50px;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 75px;
+}
+.layout_2_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 75px;
+}
+.layout_2_div img {
+    width: 333px;
+    height: 333px;
+    margin-left: 80px;
+}
+.text_home {
+    margin-left: 127px;
+}
+.text_home .ttl {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 33px;
+}
+.text_home .sub_ttl {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 33px;
+}
+.text_home .description {
+    font-size: 25px;
+    text-align: center;
+}
+
+/*メンバープロフィール*/
+.area_home_profile {
+    background-image: url(../image/profile-base-image@2x.png);
+    background-size: cover;
+    padding: 0 0 0 0;
+    color: #FFF;
+}
+.ttl_profile {
+    margin-top: 8px;
+    font-size: 50px;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.layout_3_div .level p {
+    font-size: 40px;
+    position: absolute;
+    margin-left: 111px;
+}
+.level1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 1448px;
+}
+.level2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 1839px;
+}
+.level3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top: 2240px;
+}
+.profile_tree ul {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.profile_tree li {
+    margin-right: 50px;
+    margin-left: 10px;
+    margin-top: 0px
+}
+.profile_tree img {
+    margin-top: 42px;
+    width: 73px;
+    height: 73px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+.profile_tree .list_profile_1 img {
+    margin-top: 38px;    
+}
+.profile_tree .ttl {
+    font-size: 40px;
+    text-align: center;
+    padding: 0, 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.profile_tree .description {
+    display: table-cell;
+    font-size: 15px;
+    vertical-align: middle;
+    width: 259px;
+    height: 191px;
+    text-align: center;
+    background-color: #000;
+    border: thin solid #333;
+}
+.profile_tree .list_profile_3 li {
+    margin-bottom: 64px;
+}
+
+/*sns*/
+.layout_2_sns {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+}
+.layout_2_sns li {
+    margin-right: 29px;
+    
+}
+.layout_2_sns img {
+    width: 61px;
+    height: 61px;
+    text-align: center;
+}
+.layout_2_sns  .name {
+    font-size: 20px;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.layout_2_sns .description {
+    display: table-cell;
+    vertical-align: middle;
+    color: #000000;
+    background-color: #f1f1f1;
+    width: 290px;
+    height: 206px;
+    font-size: 15px;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+}

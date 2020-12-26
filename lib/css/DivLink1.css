@@ -1,0 +1,14 @@
+.DivLinkTwitter :hover {
+    cursor: pointer;
+    box-shadow: 0 10px 25px 0 rgba(0, 172, 238, 0.5);
+}
+.DivLinkDiscord :hover {
+    cursor: pointer;
+    box-shadow: 0 10px 25px 0 rgba(114, 137, 218, 0.5);
+}
+.DivLinkNone{
+    box-shadow: none;
+}
+.DivLinkNone :hover {
+    box-shadow: none;
+}

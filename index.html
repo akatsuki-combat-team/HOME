@@ -6,6 +6,18 @@
     <title>ACT HP 【Akatuki Combat Team HP】</title>
     <link rel="stylesheet" href="lib/css/cssreset-min.css">
     <link rel="stylesheet" href="lib/css/style.css">
+    <link rel="stylesheet" href="lib/css/DivLink1.css" />
+
+  <script type="text/javascript">
+    function twitter_url() {
+      document.location.href = "https://twitter.com/ActAkatuki";
+    }
+
+    function discord_url() {
+      document.location.href = "https://discord.gg/yupXstB9wb";
+    }
+  </script>
+
 </head> 
 <body>
     <header>
@@ -18,9 +30,9 @@
             </div>
             <nav class="nav_header">
                 <ul class="list_nav_header">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">SNS</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#1">ABOUT</a></li>
+                    <li><a href="#2">SNS</a></li>
                 </ul>
 
             </nav>
@@ -34,13 +46,13 @@
                     <p>楽しくプレイしましょう</p>
                 </div>
                 <div class="area_top_view_sns">
-                    <a href="#" class="sns-btn twitter">twitter</a>
-                    <a href="#" class="sns-btn discord">discord</a>
+                    <a href="https://twitter.com/ActAkatuki" class="sns-btn twitter DivLinkTwitter">twitter</a>
+                    <a href="https://discord.gg/yupXstB9wb" class="sns-btn discord DivLinkDiscord">discord</a>
                 </div>
             </div>
         </div>
         <!--about-->
-        <section class="area_home_about">
+        <section class="area_home_about" id="1">
             <div class="container">
                 <div class="head_home">
                     <h2 class="ttl">ABOUT</h2>
@@ -111,23 +123,27 @@
             </div>
         </section>
         <!--sns-->
-        <section class="area_home_sns">
+        <section class="area_home_sns" id="2">
             <div class="container">
                 <div class="head_home">
                     <h2 class="ttl">SNS</h2>
                 </div>
                 <div class="body_home">
                     <ul class="layout_2_sns">
-                        <li class="list_twitter">
-                            <img src="lib/image/twitter.png">
-                            <p class="name">twitter</p>
-                            <p class="description">twitterで活動の記録や、色々な最新情報を発信しています。</p>
-                        </li>
-                        <li class="list_discord">
-                            <img src="lib/image/discord.png">
-                            <p class="name">discord</p>
-                            <p class="description">この部隊に参加する際には、私達の居るDiscordのサーバーに参加する必要があります。また、13歳以下の方はDiscordの規約上参加できませんのでご了承ください。</p>
-                        </li>
+                        <div class="DivLinkTwitter" onclick="twitter_url();">
+                            <li class="list_twitter DivLinkNone">
+                                <img src="lib/image/twitter.png">
+                                <p class="name">twitter</p>
+                                <p class="description">twitterで活動の記録や、色々な最新情報を発信しています。</p>
+                            </li>
+                        </div>
+                        <div class="DivLinkDiscord" onclick="discord_url();">
+                            <li class="list_discord DivLinkNone">
+                                <img src="lib/image/discord.png">
+                                <p class="name">discord</p>
+                                <p class="description">この部隊に参加する際には、私達の居るDiscordのサーバーに参加する必要があります。また、13歳以下の方はDiscordの規約上参加できませんのでご了承ください。</p>
+                            </li>
+                        </div>
                     </ul>
                 </div>
             </div>

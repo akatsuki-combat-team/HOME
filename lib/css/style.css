@@ -239,9 +239,9 @@ header > .container {
 }
 .profile_tree .description {
     display: table-cell;
-    font-size: 15px;
+    font-size: 12px;
     vertical-align: middle;
-    width: 259px;
+    width: 320px;
     height: 191px;
     text-align: center;
     background-color: #000;
@@ -260,7 +260,7 @@ header > .container {
     margin-bottom: 75px;
 }
 .layout_2_sns li {
-    margin-right: 29px;
+    margin-right: 60px;
     
 }
 .layout_2_sns img {

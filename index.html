@@ -10,29 +10,24 @@
     <title>ACT HP 【Akatuki Combat Team HP】</title>
     <link rel="stylesheet" href="lib/css/cssreset-min.css">
     <link rel="stylesheet" href="lib/css/style.css">
-    <link rel="stylesheet" href="lib/css/DivLink1.css" />
-
-  <script type="text/javascript">
-    function twitter_url() {
-      document.location.href = "https://twitter.com/ActAkatuki";
-    }
-
-    function discord_url() {
-      document.location.href = "https://discord.gg/yupXstB9wb";
-    }
-  </script>
+    <link rel="stylesheet" href="lib/css/DivLink1.css"/>
+    <link rel="stylesheet" href="lib/css/animation.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
+    <script type="text/javascript" src="lib/js/animation.js"></script>
+    <script type="text/javascript" src="lib/js/urllist.js"></script>
 
 </head> 
 <body>
     <header>
-        <div class="container">
-            <div class="area_logo_header">
+        <div class="container fadeInDown">
+            <div class="area_logo_header fadeInDown">
                 <a href="#" class="logo">
                     <img src="lib/image/about icon.png">
                     <p>ACT Akatuki Combat Team</p>
                 </a>
             </div>
-            <nav class="nav_header">
+            <nav class="nav_header fadeInDown">
                 <ul class="list_nav_header">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#1">ABOUT</a></li>
@@ -43,13 +38,13 @@
         </div>
     </header>
     <main>
-        <div class="area_top_view">
+        <div class="area_top_view fadeInDown">
             <div class="container">
-                <div class="top_view_ttl">
-                    <p>Welcome to ACT</p>
-                    <p>楽しくプレイしましょう</p>
+                <div class="top_view_ttl fadeInDown">
+                    <p class="fadeInDown">Welcome to ACT</p>
+                    <p class="fadeInDown">楽しくプレイしましょう</p>
                 </div>
-                <div class="area_top_view_sns">
+                <div class="area_top_view_sns fadeInDown">
                     <a href="https://twitter.com/ActAkatuki" class="sns-btn twitter DivLinkTwitter">twitter</a>
                     <a href="https://discord.gg/yupXstB9wb" class="sns-btn discord DivLinkDiscord">discord</a>
                 </div>
@@ -57,83 +52,146 @@
         </div>
         <!--about-->
         <section class="area_home_about" id="1">
-            <div class="container">
-                <div class="head_home">
-                    <h2 class="ttl">ABOUT</h2>
+            <div class="container fadeInDown">
+                <div class="head_home fadeInDown">
+                    <h2 class="ttl fadeInDown">ABOUT</h2>
                 </div>
-                <div class="body_home">
+                <div class="body_home scrollanime">
                     <div class="layout_2_div">
-                        <div class="img">
+                        <div class="img scrollanime">
                             <img src="lib/image/about icon@2x.png">
                         </div>
-                        <div class="text_home">
-                            <p class="ttl">最低限のマナーを守ってプレイしましょう</p>
-                            <p class="sub_ttl">2020年10月24日に設立しました</p>
-                            <p class="description">Gehiroda氏によって設立した部隊ACTは、初心者から熟練者まで様々なメンバーが集まり和気あいあいと活動ています。</p>
+                        <div class="text_home scrollanime">
+                            <p class="ttl scrollanime">最低限のマナーを守ってプレイしましょう</p>
+                            <p class="sub_ttl scrollanime">2020年10月24日に設立しました</p>
+                            <p class="description scrollanime">Gehiroda氏によって設立した部隊ACTは、初心者から熟練者まで様々なメンバーが集まり和気あいあいと活動ています。</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--メンバー一覧-->
-        <section class="area_home_profile">
+        <section class="area_home_profile scrollanime">
             <div class="container">
                 <div class="head_home">
-                    <h2 class="ttl_profile">メンバープロフィール</h2>
+                    <h2 class="ttl_profile scrollanime">メンバープロフィール</h2>
                 </div>
                 <div class="body_home">
                     <div class="layout_3_div">
-                        <div class="level">
-                            <p class="level1">隊長</p>
-                            <p class="level2">士官</p>
-                            <p class="level3">兵卒</p>
-                        </div>
                         <div class="profile_tree">
+
+                            <ul class="level scrollanime">隊長</ul>
+
                             <ul class="list_profile_1">
-                                <li>
-                                    <img src="lib/image/about icon.png">
-                                    <p class="ttl">Gehiroda</p>
-                                    <p class="description">Gehirodaです。ヒロと呼んでくだ
-                                        さい。陸メインでやってます。AB勢です。よろしくお願いします。</p>
-                                </li>
+                                <div class="DivLinkPlayerName scrollanime">
+                                    <li class="DivLinkNone">
+                                        <img src="lib/image/about icon.png" class="scrollanime">
+                                        <p class="ttl scrollanime">Gehiroda</p>
+                                        <p class="description scrollanime">～完～</p>
+                                    </li>
+                                </div>
                             </ul>
+
+                            <ul class="level scrollanime">士官</ul>
+
                             <ul class="list_profile_2">
-                                <li>
-                                    <img src="lib/image/about icon.png">
-                                    <p class="ttl">aji_fry</p>
-                                    <p class="description">コメントなし</p>
-                                </li>
-                                <li>
-                                    <img src="lib/image/about icon.png">
-                                    <p class="ttl">mu_nya_</p>
-                                    <p class="description">空メインだけど最近陸にハマりました。<br>
-                                        AB、RBどっちもやります。</p>
-                                </li>
+                                <div class="DivLinkPlayerName scrollanime">
+                                    <li class="DivLinkNone">
+                                        <img src="lib/image/about icon.png" class="scrollanime">
+                                        <p class="ttl scrollanime">aji_fry</p>
+                                        <p class="description scrollanime">非公開</p>
+                                    </li>
+                                </div>
+                                <div class="DivLinkPlayerName scrollanime">
+                                    <li class="DivLinkNone scrollanime">
+                                        <img src="lib/image/about icon.png" class="scrollanime">
+                                        <p class="ttl scrollanime">mu_nya_</p>
+                                        <p class="description scrollanime">空メインだけど最近陸にハマりました。<br>
+                                            AB、RBどっちもやります。</p>
+                                    </li>
+                                </div>
                             </ul>
+
+                            <ul class="level scrollanime">兵卒</ul>
+
                             <ul class="list_profile_3">
-                                <li>
-                                    <img src="lib/image/about icon.png">
-                                    <p class="ttl">takuzou3112</p>
-                                    <p class="description">コメントなし</p>
-                                </li>
-                                <li>
-                                    <img src="lib/image/about icon.png">
-                                    <p class="ttl">Kimijeep</p>
-                                    <p class="description">初心者です、最近までプレイできたのですが、NEWPOWERのおかげでWarthunderできなくなりました。<br>
-                                        ちくしょー。</p>
-                                </li>
-                                <li>
-                                    <img src="lib/image/about icon.png">
-                                    <p class="ttl">ROWAPOUT</p>
-                                    <p class="description">ROWAPOUTです(Rって呼んでください)<br>
-                                        <br>
-                                        ABもRBもSBもしてます！<br>
-                                        陸は米、独、日ツリー育ててます<br>
-                                        海は日のみです<br>
-                                        空は米、日ツリーです<br>
-                                        基本的にINしてる時は暇なので誘ってください！<br>
-                                        マイク買ってないので今のところvcは無理です！</p>
-                                </li>
+                                <div class="DivLinkPlayerName scrollanime">
+                                    <li class="DivLinkNone scrollanime">
+                                        <img src="lib/image/about icon.png" class="scrollanime">
+                                        <p class="ttl scrollanime">takuzou3112</p>
+                                        <p class="description scrollanime">非公開</p>
+                                    </li>
+                                </div>
+                                <div class="DivLinkPlayerName scrollanime">
+                                    <li class="DivLinkNone scrollanime">
+                                        <img src="lib/image/about icon.png" class="scrollanime">
+                                        <p class="ttl scrollanime">Kimijeep</p>
+                                        <p class="description scrollanime">陸メインでやっています。日本戦車が好きです。Kimijeep Channel で動画出してます。<br></p>
+                                    </li>
+                                </div>
+                                <div class="DivLinkPlayerName scrollanime">
+                                    <li class="DivLinkNone">
+                                        <img src="lib/image/about icon.png" class="scrollanime">
+                                        <p class="ttl scrollanime">katudon5203</p>
+                                        <p class="description scrollanime">katudonです。<br>
+                                            パソコンと腕が雑魚い人です。<br>
+                                            空RBと陸ABがメイン。<br>
+                                            空8.3/陸7.0/海4.7 全部日本です。</p>
+                                    </li>
+                                </div>
+                                <div class="DivLinkPlayerName scrollanime">
+                                    <li class="DivLinkNone">
+                                        <img src="lib/image/about icon.png" class="scrollanime">
+                                        <p class="ttl scrollanime">koutya0125</p>
+                                        <p class="description scrollanime">空AB中心にやってます。まだ機体BR5.3が最高です。よろしくお願いします</p>
+                                    </li>
+                                </div>
+                                <div class="DivLinkPlayerName scrollanime">
+                                    <li class="DivLinkNone">
+                                        <img src="lib/image/about icon.png" class="scrollanime">
+                                        <p class="ttl scrollanime">waon0326k</p>
+                                        <p class="description scrollanime">わおんと呼んでください。空RB、陸RB＆SBを超マイペースでやってます。気軽に声かけてください！</p>
+                                    </li>
+                                </div>
+                                <div class="DivLinkPlayerName scrollanime">
+                                    <li class="DivLinkNone">
+                                        <img src="lib/image/about icon.png" class="scrollanime">
+                                        <p class="ttl scrollanime">Pilotofusa</p>
+                                        <p class="description scrollanime">最近は殆どプレイしていませんがよろしくお願いします。
+                                            BRは4.0くらい？RB、SB、海はやってません</p>
+                                    </li>
+                                </div>
+                                <div class="DivLinkPlayerName scrollanime">
+                                    <li class="DivLinkNone">
+                                        <img src="lib/image/about icon.png" class="scrollanime">
+                                        <p class="ttl scrollanime">yutikawa0801</p>
+                                        <p class="description scrollanime">yutikawaです。
+                                            陸空やってます。（海ヘリはまだ）
+                                            陸はアメソ連で10．3。空はアメで10．7いけます<br>
+                                            マイクぶっ刺してるんでVCもやれますので分隊はIN中ならいつでもOKです</p>
+                                    </li>
+                                </div>
+                                <div class="DivLinkPlayerName scrollanime">
+                                    <li class="DivLinkNone">
+                                        <img src="lib/image/about icon.png" class="scrollanime">
+                                        <p class="ttl scrollanime">PlayerZ</p>
+                                        <p class="description scrollanime">～完～</p>
+                                    </li>
+                                </div>
+                                <div class="DivLinkPlayerName scrollanime">
+                                    <li class="DivLinkNone">
+                                        <img src="lib/image/about icon.png" class="scrollanime">
+                                        <p class="ttl scrollanime">PlayerO</p>
+                                        <p class="description scrollanime">非公開</p>
+                                    </li>
+                                </div>
+                                <div class="DivLinkPlayerName scrollanime">
+                                    <li class="DivLinkNone">
+                                        <img src="lib/image/about icon.png" class="scrollanime">
+                                        <p class="ttl scrollanime">PlayerB</p>
+                                        <p class="description scrollanime">非公開</p>
+                                    </li>
+                                </div>
                             </ul>
                         </div>
                     </div> 
@@ -143,27 +201,27 @@
         <!--sns-->
         <section class="area_home_sns" id="2">
             <div class="container">
-                <div class="head_home">
+                <div class="head_home scrollanime">
                     <h2 class="ttl">SNS</h2>
                 </div>
                 <div class="body_home">
                     <ul class="layout_2_sns">
                         <div class="DivLinkTwitter" onclick="twitter_url();">
-                            <li class="list_twitter DivLinkNone">
+                            <li class="list_twitter DivLinkNone scrollanime">
                                 <img src="lib/image/twitter.png">
-                                <p class="name">twitter</p>
-                                <p class="description">twitterで活動の記録や、色々な最新情報を発信しています。</p>
+                                <p class="name scrollanime">twitter</p>
+                                <p class="description scrollanime">twitterで活動の記録や、色々な最新情報を発信しています。</p>
                             </li>
                         </div>
                         <div class="DivLinkDiscord" onclick="discord_url();">
-                            <li class="list_discord DivLinkNone">
+                            <li class="list_discord DivLinkNone scrollanime">
                                 <img src="lib/image/discord.png">
-                                <p class="name">discord</p>
-                                <p class="description">この部隊に参加する際には、私達の居るDiscordのサーバーに参加する必要があります。また、13歳以下の方はDiscordの規約上参加できませんのでご了承ください。</p>
+                                <p class="name scrollanime">discord</p>
+                                <p class="description scrollanime">この部隊に参加する際には、私達の居るDiscordのサーバーに参加する必要があります。また、13歳以下の方はDiscordの規約上参加できませんのでご了承ください。</p>
                             </li>
                         </div>
                         <div class="DivLinkTwitter">
-                            <li class="list_twitter DivLinkNone" >
+                            <li class="list_twitter DivLinkNone scrollanime" >
                                 <a class="twitter-timeline" href="https://twitter.com/ActAkatuki?ref_src=twsrc%5Etfw" height="500px" width="609px">Tweets by ActAkatuki</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                             </li>
                         </div>

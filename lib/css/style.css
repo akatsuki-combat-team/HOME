@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url(https://fonts.googleapos.com/earlyccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 body {
     margin: 0;
@@ -39,7 +39,6 @@ header {
     z-index: 9999;
 }
 header > .container {
-    max-width: 1820px;
     margin-left: auto;
     margin-right: auto;
     padding: 0, 20px;
@@ -59,7 +58,7 @@ header > .container {
 }
 .area_logo_header  p {
     font-size: 30px;
-    color: #C6C2C2;
+    color: rgb(255, 255, 255);
     width: 430px;
     height: 45px;
     margin: 15px;
@@ -79,7 +78,7 @@ header > .container {
 }
 .list_nav_header a {
     text-decoration: none;
-    color: #C6C2C2;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -90,19 +89,29 @@ header > .container {
     background-size: cover;
     padding: 180px 0 150px 0;
 }
+.area_top_view::before {
+    content: '';
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 .area_top_view > .container {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     padding: 100 20px;
 }
-.top_view_ttl p {
+.top_view_ttl {
     text-decoration: none;
     text-align: left;
     font-size: 40px;
-    color: white;
-
+    color: rgb(255, 255, 255);
+    opacity: max;
 }
+
 
 /*btn*/
 .area_top_view_sns {
@@ -122,10 +131,32 @@ header > .container {
     font-size: 30px;
 }
 .twitter {
-    background-color: #00ACEE;
+    background: #fff;
+    color: #00ACEE;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border: solid 3px #00ACEE;
 }
 .discord {
+    background: #fff;
+    color: #7289DA;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    border: solid 3px #7289DA;
+}
+.twitter:hover {
+    color: white;
+    background-color: #00ACEE;
+}
+.discord:hover {
+    color: white;
     background-color: #7289DA;
+}
+.twitter:active {
+    letter-spacing: 5px;
+}
+.discord:active {
+    letter-spacing: 2px;
 }
 
 /*about*/
@@ -180,45 +211,39 @@ header > .container {
     color: #FFF;
 }
 .ttl_profile {
+    padding: auto;
     margin-top: 8px;
     font-size: 50px;
     color: #FFF;
+    justify-content: center;
     text-align: center;
     font-weight: bold;
     margin-bottom: 0;
 }
-.layout_3_div .level p {
-    font-size: 40px;
-    position: absolute;
-    margin-left: 111px;
-}
-.level1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    top: 1448px;
-}
-.level2 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    top: 1839px;
-}
-.level3 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    top: 2240px;
-}
+
 .profile_tree ul {
     text-align: center;
     list-style: none;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding: 0;
+    font-size: 40px;
+}
+.profile_tree .level {
+    margin-top: 40px;
 }
 .profile_tree li {
-    margin-right: 50px;
-    margin-left: 10px;
-    margin-top: 0px
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 0px;
+    width: 250px;
+    height: 400px;
+    margin-bottom: 64px;
 }
 .profile_tree img {
     margin-top: 42px;
@@ -241,15 +266,13 @@ header > .container {
     display: table-cell;
     font-size: 12px;
     vertical-align: middle;
-    width: 320px;
-    height: 191px;
+    width: 250px;
+    height: 200px;
     text-align: center;
     background-color: #000;
     border: thin solid #333;
 }
-.profile_tree .list_profile_3 li {
-    margin-bottom: 64px;
-}
+
 
 /*sns*/
 .layout_2_sns {
@@ -288,4 +311,304 @@ header > .container {
 /*footer*/
 footer {
     text-align: center;
+}
+
+@media screen and (max-width: 980px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+    .container {
+        max-width: 767px;
+        padding: 0 40px;
+        margin: 0 auto;
+    }
+    
+    /*header*/
+    header {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.58);
+        z-index: 9999;
+    }
+    header > .container {
+        max-width: 1820px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0, 20px;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .area_logo_header .logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .area_logo_header img {
+        width: 10%;
+        height: 10%;
+    }
+    .area_logo_header  p {
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+        width: 430px;
+        height: 45px;
+        margin: 15px;
+    }
+    .nav_header {
+        margin-right: 50px;
+    }
+    .list_nav_header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .list_nav_header li {
+        font-size: 25px;
+        list-style: none;
+        text-align: center;
+        margin-right: 50px;
+    }
+    .list_nav_header a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    
+    
+    /*main*/
+    /*view*/
+    .area_top_view {
+        background-image: url(../image/warthunder-header-image@2x.png);
+        background-size: cover;
+        padding: 180px 0 150px 0;
+    }
+    .area_top_view::before {
+        content: '';
+        background-color: rgba(0,0,0,.5);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .area_top_view > .container {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 100 20px;
+    }
+    .top_view_ttl {
+        text-decoration: none;
+        text-align: left;
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    
+    
+    /*btn*/
+    .area_top_view_sns {
+        display: flex;
+        justify-content: center;
+    }
+    .sns-btn {
+        width: 136px;
+        height: 53px;
+        color: white;
+        border-radius: 26px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        line-height: 55px;
+        margin: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 30px;
+    }
+    .twitter {
+        background: #fff;
+        color: #00ACEE;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        border: solid 3px #00ACEE;
+    }
+    .discord {
+        background: #fff;
+        color: #7289DA;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        border: solid 3px #7289DA;
+    }
+    .twitter:hover {
+        color: white;
+        background-color: #00ACEE;
+    }
+    .discord:hover {
+        color: white;
+        background-color: #7289DA;
+    }
+    .twitter:active {
+        letter-spacing: 5px;
+    }
+    .discord:active {
+        letter-spacing: 2px;
+    }
+    
+    /*about*/
+    .area_home_about .container {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .head_home > .ttl {
+        margin-top: 75px;
+        font-size: 50px;
+        color: #000;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 75px;
+    }
+    .layout_2_div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 75px;
+    }
+    .layout_2_div img {
+        width: 333px;
+        height: 333px;
+        margin-left: 80px;
+    }
+    .text_home {
+        margin-left: 127px;
+    }
+    .text_home .ttl {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 33px;
+    }
+    .text_home .sub_ttl {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 33px;
+    }
+    .text_home .description {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    /*メンバープロフィール*/
+    .area_home_profile {
+        background-image: url(../image/profile-base-image@2x.png);
+        background-size: cover;
+        padding: 0 0 0 0;
+        color: #FFF;
+    }
+    .ttl_profile {
+        padding: auto;
+        margin-top: 8px;
+        font-size: 50px;
+        color: #FFF;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    
+    .profile_tree ul {
+        text-align: center;
+        list-style: none;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0;
+        font-size: 40px;
+    }
+    .profile_tree .level {
+        margin-top: 40px;
+    }
+    .profile_tree li {
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 0px;
+        width: 250px;
+        height: 400px;
+        margin-bottom: 64px;
+    }
+    .profile_tree img {
+        margin-top: 42px;
+        width: 73px;
+        height: 73px;
+        text-align: center;
+        margin-bottom: 14px;
+    }
+    .profile_tree .list_profile_1 img {
+        margin-top: 38px;    
+    }
+    .profile_tree .ttl {
+        font-size: 40px;
+        text-align: center;
+        padding: 0, 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .profile_tree .description {
+        display: table-cell;
+        font-size: 12px;
+        vertical-align: middle;
+        width: 250px;
+        height: 200px;
+        text-align: center;
+        background-color: #000;
+        border: thin solid #333;
+    }
+    
+    
+    /*sns*/
+    .layout_2_sns {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 75px;
+    }
+    .layout_2_sns li {
+        margin-right: 60px;
+        
+    }
+    .layout_2_sns img {
+        width: 61px;
+        height: 61px;
+        text-align: center;
+    }
+    .layout_2_sns  .name {
+        font-size: 20px;
+        text-align: center;
+        padding: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .layout_2_sns .description {
+        display: table-cell;
+        vertical-align: middle;
+        color: #000000;
+        background-color: #f1f1f1;
+        width: 290px;
+        height: 206px;
+        font-size: 15px;
+    }
+    
+    /*footer*/
+    footer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
 }

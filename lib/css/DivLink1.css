@@ -6,6 +6,10 @@
     cursor: pointer;
     box-shadow: 0 10px 25px 0 rgba(114, 137, 218, 0.5);
 }
+.DivLinkPlayerName :hover {
+    cursor: pointer;
+    box-shadow: 0 10px 25px 0 rgba(184, 11, 54, 0.5);
+}
 .DivLinkNone{
     box-shadow: none;
 }
